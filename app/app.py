@@ -251,10 +251,10 @@ app.layout = html.Div([
                 ], style={"background":"#f8fafc"}),
                 html.Tr([
                     html.Td("DBSCAN", style={"padding":"10px 16px","fontWeight":"600"}),
-                    html.Td("3",      style={"textAlign":"center","padding":"10px 16px"}),
+                    html.Td("4",      style={"textAlign":"center","padding":"10px 16px"}),
                     html.Td("0.051",  style={"textAlign":"center","padding":"10px 16px","color":"#d97706","fontWeight":"700"}),
                     html.Td("745 (33.3%)", style={"textAlign":"center","padding":"10px 16px","color":"#dc2626"}),
-                    html.Td("Density-based; 33% of customers classified as outliers.", style={"padding":"10px 16px","color":"#475569"}),
+                    html.Td("4 clusters total: 3 meaningful groups + Cluster -1 (outliers/noise). 33% of customers flagged as outliers.", style={"padding":"10px 16px","color":"#475569"}),
                 ]),
             ])
         ], style={"width":"100%","borderCollapse":"collapse","borderRadius":"10px","overflow":"hidden",
@@ -448,4 +448,4 @@ def reset_inputs(n_clicks):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
