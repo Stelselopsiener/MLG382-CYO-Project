@@ -125,6 +125,7 @@ for z in [z_min, z_min / 2, 0.0, z_max / 2, z_max]:
 
 # ====================== DASH APP ======================
 app = Dash(__name__, external_stylesheets=["assets/style.css"])
+server = app.server
 
 app.layout = html.Div([
     html.H1("Customer Segmentation Dashboard", className="header"),
